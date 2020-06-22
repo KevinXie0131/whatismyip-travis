@@ -11,7 +11,7 @@ import (
 
 func httphandler(w http.ResponseWriter, r *http.Request) {
 	ipAddress, _, _ := net.SplitHostPort(r.RemoteAddr)
-	fmt.Fprintf(w, "%s", ipAddress)
+	fmt.Fprintf(w, "This is %s", ipAddress)
 }
 
 func main() {
